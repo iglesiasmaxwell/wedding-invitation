@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preload" href="CSS/style.css" as="style">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>LOREM&IPSUM</title>
+</head>
+<audio autoplay loop preload="auto" id="player">
+    <source src="SONG/Bless The Broken Road.mp3" type="audio/mpeg">
+</audio>
+<body onpageshow="document.getElementById('player').play()", ondblclick="document.getElementById('player').play()">
+    <div class="title-con">
+    <section class="header-img" width="100%" height="550px" id="home">
+        
+
+        <div class="title-header">
+            <header class="titletext-con">
+                <p class="title">Lorem</p>
+                <p class="title2">&</p>
+                <p class="title3">Ipsum</p>
+                <p class="title-desc">THE</p>
+                <p class="title-desc1">WEDDING</p>
+            </header>
+            <div class="title-button-section">
+                <a href="#rsvp" class=title-button>Répondez s'il vous plaît</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+<main>
+    <section class="story" width="100%"  height="70rem" id="story">
+        <h2 class="navtitle">OUR STORY</h2>
+        <div class="vertical-line"></div>
+    <div class="story-text">
+    <div class="story-con">
+        <div class="story-text-l">
+            <div class="img-con">
+                <div class="img-hover">
+                <img class="story-img1" width="15rem" height="15rem">
+                </div>
+                <p class="story-details">"Lorem ipsum dolor sit amet."</p>
+                <p class="story-details">30 February 2030</p>
+            </div>
+        </div>
+    </div>
+    <div class="story-con2">
+        <div class="story-text-r">
+            <div class="img-con">
+                <div class="img-hover">
+                <img class="story-img2" width="15rem" height="15rem">
+                </div>
+                <p class="story-details">"Lorem ipsum dolor sit amet."</p>
+                <p class="story-details">31 February 2030</p>
+            </div>
+        </div>
+    </div>
+    <div class="story-con">
+        <div class="story-text-l">
+            <div class="img-con">
+                <div class="img-hover">
+                <img class="story-img3" width="15rem" height="15rem">
+                </div>
+                <p class="story-details">"Lorem ipsum dolor sit amet."</p>
+                <p class="story-details">32 February 2030</p>
+            </div>
+        </div>
+    </div>
+    <div class="story-con2">
+        <div class="story-text-r">
+            <div class="img-con">
+                <div class="img-hover">
+                <img class="story-img4" width="15rem" height="15rem">
+                </div>
+                <p class="story-details">"Lorem ipsum dolor sit amet."</p>
+                <p class="story-details">33 February 2030</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="wed-date" width="100%" height="20rem" id="wedding">
+    <div class="wed-date-con">
+        <p class="paradate">SAVE THE DATE</p>
+        <p class="date">40 AUGUST 2040</p>
+    </div>
+    </section>
+
+    <section class="wedding" id="details">
+        <div class="wed-con">
+            <h2 class="navtitle2">WEDDING DETAILS</h2>
+            <p class="wed-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam accusantium dolores alias cupiditate ab accusamus repellendus illo nobis adipisci. Aut velit ea ad consequuntur, labore accusantium. Possimus, veritatis!</p>
+            <p class="wed-details">The Ceremony</p>
+            <p class="sub-details">12.00pm - 2.00pm</p>
+            <p class="sub-details2">Location Unknown</p>
+            <p class="wed-details">The Reception</p>
+            <p class="sub-details">3.00pm - 9.00pm</p>
+            <p class="sub-details2">Location Unknown</p>
+        </div>
+    </section>
+
+    <div class="rsvp-con" id="rsvp">
+    <section class="rsvp">
+        <h2 class="navtitle3">RSVP</h2>
+        <form class="forms" autocomplete="off" spellcheck="false">
+            <label class="labels" for="email">Email Address *</label><br>
+            <span class="input-select">
+            <input class="form-input inputs" type="email" id="email" name="email" required><br>
+            </span>
+
+            <label class="labels">Name *</label><br>
+        <div class="name-con input-select">
+            <input class="name-input" type="text" id="fname" name="fname" required>
+            <label class="resp-name-label" for="fname">First Name</label>
+            <input class="name-input" type="text" id="lname" name="lname">
+            <label class="resp-name-label" for="lname">Last Name</label>
+        </div>
+        <div class="subname-con">
+            <label class="sublabel-text sublabels name-label" for="fname">First Name</label>
+            <label class="lname sublabels name-label" for="lname">Last Name</label><br>
+        </div>
+
+        <div class="rucoming-con">
+            <label class="labels" for="rucoming">Are you coming? *</label><br>
+        <span class="input-select">
+            <input class="form-input inputs" type="text" id="rucoming" name="rucoming" required><br>
+        </span>
+        </div>
+
+            <label class="labels" for="rubringinganyone">Are you bringing anyone with you? *</label><br>
+        <span class="input-select">
+            <input class="form-input inputs" type="text" id="rubringinganyone" name="rubringinganyone" required><br>
+        </span>
+
+            <label class="labels" for="spemess">Got any special message for us?</label><br>
+            <h class=" sublabel-text sublabels">Well wishes, song requests, or anything else you can think of!</h>
+        <span class="input-select">
+            <textarea class="message-form inputs" id="spemess" name="spemess"></textarea>
+        </span>
+
+            <input class="submit-button" type="submit" value="Submit">
+        </form>
+    </section>
+    </div>
+
+    <div class="song-button-con">
+        <button class="song-button" onclick="document.getElementById('player').play()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 4v16l13 -8z"/>
+        </svg></button>
+        <button class="song-button2" onclick="document.getElementById('player').pause()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-pause" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="6" y="5" width="4" height="14" rx="1" />
+            <rect x="14" y="5" width="4" height="14" rx="1" />
+        </svg></button>
+        <button class="song-button3" onclick="document.getElementById('player').muted=!document.getElementById('player').muted"><svg xmlns="http://www.w3.org/2000/svg" class="icon2 icon-tabler icon-tabler-volume-2" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M15 8a5 5 0 0 1 0 8" />
+            <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+          </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon3 icon-tabler icon-tabler-slash" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M17 5l-10 14"></path>
+        </svg></button>
+    </div>
+    <div class="song-button-con2">
+        <button class="song-button4" onmousemove="document.getElementById('player').play()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="6" cy="17" r="3"></circle>
+            <circle cx="16" cy="17" r="3"></circle>
+            <polyline points="9 17 9 4 19 4 19 17"></polyline>
+            <line x1="9" y1="8" x2="19" y2="8"></line>
+         </svg></button>
+    </div>
+        <div class="song-button-text-con">
+            <p class="song-button-text">Sweep through this button</p>
+            <p class="song-button-text">Double click on the website</p>
+        </div>
+        <div class="song-button-text-con2">
+            <p class="song-button-text">or</p>
+        </div>
+
+        <nav class="navbar">
+            <nav class="navbar-shade">
+            <h2 class="subtitle-con">
+                    <h class="subtitle">L & I</h>
+                    <a href="#rsvp" class="rsvpmenu">RSVP</a>
+                    <a href="#details" class="submenu">DETAILS</a>
+                    <a href="#wedding" class="submenu">WEDDING</a>
+                    <a href="#story" class="submenu">OUR STORY</a>
+                    <a href="#home" class="submenu">HOME</a>
+            </h2>
+            </nav>
+            <hr class="navbar-line">
+        </nav>
+</main>
+
+    <footer class="footer-con">
+        <a class="footer-link" href="#home">
+        <p class="footer-text">#LoveTodayYesterdayAndForever</p>
+        </a>
+    </footer>
+</body>
+</html>

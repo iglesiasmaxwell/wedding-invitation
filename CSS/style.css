@@ -1,0 +1,799 @@
+:root{
+    --primary : #7aa8e9;
+    --primary2: #468ff5;
+    --secondary: #ffcaeb;
+    --secondary2: #fb9fd7;
+    --tertiary: #cad14c;
+    --hattrick: #cb2d5a;
+    --background: #1c2754;
+    --webcolor : #c7cfde;
+    --white : #FFFFFF;
+    --black: #212121;
+    --lightblack: #433f3fc7;
+    --gray: #a7a7a7;
+    --gray2: #727272;
+    --green: #359155;
+}
+html{
+    scroll-behavior: smooth;
+    overflow: auto;
+    overflow-x: hidden;
+    cursor: default;
+}
+@font-face{
+    font-family: Celestine;
+    src: url(../FONTS/Celestine.otf);
+}
+@font-face {
+    font-family: Milgran;
+    src: url(../FONTS/Milgran.ttf);
+}
+@font-face {
+    font-family: Swifted;
+    src: url(../FONTS/Swifted.otf);
+}
+@font-face {
+    font-family: Emerland;
+    src: url(../FONTS/Emerland.ttf);
+}
+::-moz-selection{
+    color: var(--replacebg);
+    background-color: var(--replacebg);
+}
+::selection{
+    color: var(--replacebg); 
+    background-color: var(--replacebg);
+}
+form input ::-moz-selection{
+    color: var(--white); 
+    background-color: var(--background);
+}
+.input-select ::selection{
+    color: var(--white); 
+    background-color: var(--background);
+}
+body{
+    background-color: var(--webcolor);
+}
+hr{
+    border: 0.3px dotted rgba(255, 255, 255, 0.406);
+    /* margin-top: 1.2rem; */
+}
+.title-con{
+    margin: 0 auto;
+    /* padding-bottom: 0.1rem; */
+}
+.header-img{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-size: cover;
+    background-color: var(--replacebg);
+    position: relative;
+    background-image: linear-gradient(rgba(75, 75, 75, 0.169),rgba(89, 89, 89, 0.301)), url(../IMAGE/wedding.jpg);
+    width: 100%;
+    height: 550px;
+}
+.navbar{
+    /* margin: 1rem 0; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-shade{
+    padding: 0.9rem 0;
+}
+.navbar-shade:hover{
+    background-image: linear-gradient(to top, rgba(97, 90, 90, 0.1),rgba(107, 101, 101, 0.299));
+}
+.navbar-line{
+    /* margin: 0.8rem 0; */
+    margin: 0
+}
+.subtitle-con{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', cursive;
+    padding-left: 1.3rem;
+    margin: 0;
+}
+.subtitle{
+    cursor: none;
+    font-family: 'Emerland', serif;
+}
+.subtitle:hover{
+    color: var(--primary2);
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 1s;
+}
+.submenu-con{
+    margin: 0 auto;
+}
+.submenu{
+    align-content: space-between;
+    font-size: small;
+    color: var(--white);
+    text-decoration: none;
+    float: right;
+    margin-top: 0.5rem;
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+}
+.submenu:hover{
+    color: var(--secondary2);
+}
+.rsvpmenu{
+    font-size: small;
+    color: var(--white);
+    text-decoration: none;
+    float: right;
+    background-color: var(--replacebg);
+    border: 2px solid var(--primary);
+    border-radius: 0.2rem;
+    padding: 0.65rem 1rem 0.4rem;
+    margin-right: 1.5rem;
+    margin-top: -0.25rem;
+}
+.rsvpmenu:hover{
+    color: var(--secondary);
+    background-color: var(--primary);
+    background-image: linear-gradient(rgba(105, 105, 105, 0.095),rgba(112, 106, 106, 0.153));
+    transition: all ease 0.5s;
+}
+.title-header{
+    text-align: center;
+}
+.title{
+    color: var(--white);
+    font-size: 7rem;
+    font-family: 'Celestine', cursive;
+    line-height: 1.5rem;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+.title2{
+    color: var(--white);
+    font-size: 2rem;
+    font-family: 'Celestine', cursive;
+    line-height: 0;
+    margin-top: -0.8rem; 
+    margin-left: 8rem;
+    font-weight: 500;
+}
+.title3{
+    color: var(--white);
+    font-size: 7rem;
+    font-family: 'Celestine', cursive;
+    line-height: 0;
+    margin-top: 2.7rem; 
+    margin-left: -6.5rem;
+    font-weight: 400;
+}
+.title-desc{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-family: 'Swifted', cursive;
+    line-height: 0.1rem;
+    font-weight: 600;
+    margin-top: -15rem;
+    margin-left: -5.6rem;
+    margin-bottom: 0;
+    opacity: 80%;
+}
+.title-desc1{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-family: 'Swifted', cursive;
+    line-height: 0.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 9.6rem;
+    margin-left: 9rem;
+    opacity: 80%;
+}
+.title-button-section{
+    margin-top: 8.5rem;
+}
+.title-button{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-family: 'Arvo', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    background-color: var(--replacebg);
+    background-image: linear-gradient(rgba(133, 150, 205, 0.183),rgba(89, 85, 85, 0.27));
+    border: 3px solid var(--primary);
+    border-radius: 0.45rem;
+}
+.title-button:hover{
+    color: var(--secondary);
+    background-color: var(--primary);
+    background-image: linear-gradient(rgba(105, 105, 105, 0.095),rgba(112, 106, 106, 0.153));
+    transition: all ease 0.8s;
+}
+.navtitle{
+    margin: 2rem auto;
+    font-size: 3.5rem;
+    color: var(--secondary);
+    text-align: center;
+    font-family: 'Milgran', sans-serif;
+}
+.story{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.27)),url(../IMAGE/sea.jpg);
+    background-color: var(--replacebg);
+    width: 100%;
+    height: 70rem;
+    padding-top: 1rem;
+}
+.story-text{
+    color: var(--black);
+    font-size: 0.85rem;
+    font-family: 'Covered By Your Grace', cursive;
+    margin: 0 8rem 0 8rem;
+}
+.story-text-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    line-height: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+.story-text-r{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    line-height: 0.1rem;
+    margin-bottom: 1.5rem;
+    margin-top: -12rem;
+}
+.story-details{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.vertical-line{
+    border-left: 5px dashed var(--secondary);
+    height: 979.5px;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: 0.7rem;
+    top: 30;
+    opacity: 80%;
+}
+.story-con{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.story-con2{
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+}
+.img-con{
+    background-color: var(--white);
+    padding: 0.3rem 0.3rem 1rem 0.3rem;
+    box-shadow: 11px 15px 5px -8px rgba(0,0,0,0.3);
+}
+.img-hover{
+    overflow: hidden;
+}
+.img-hover img{
+    transition: transform 1.2s, filter 2s ease-in-out;
+    filter: blur(2px);
+    filter: grayscale(80%);
+    transform: scale(1.25);
+}
+.img-hover:hover img{
+    filter: blur(0);
+    filter: grayscale(0);
+    transform: scale(1);
+}
+.story-img1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.27)), url(../IMAGE/one.jpg);
+    background-color: var(--replacebg);
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+}
+.story-img2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.27)), url(../IMAGE/two.jpg);
+    background-color: var(--replacebg);
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+}
+.story-img3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.27)), url(../IMAGE/three.jpg);
+    background-color: var(--replacebg);
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+}
+.story-img4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.27)), url(../IMAGE/four.jpg);
+    background-color: var(--replacebg);
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+}
+.wed-date{
+    background-image: linear-gradient(rgba(60, 138, 233, 0.18),rgba(87, 87, 87, 0.27)), url(../IMAGE/handhold.jpg);
+    background-color: var(--replacebg);
+    padding-top: 9rem;
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+}
+.wed-date-con{
+    /* margin-top: 9rem; */
+    margin-bottom: 9rem;
+    color: var(--white);
+}
+.paradate{
+    text-align: center;
+    /* line-height: 0.1rem; */
+    font-family: 'Arvo', serif;
+    font-size: 1.2rem;
+}
+.date{
+    color: var(--black);
+    text-align: center;
+    font-size: 5rem;
+    /* line-height: 0.1rem; */
+    font-family: 'Covered By Your Grace', cursive;
+    margin-top: -1rem;
+}
+.wedding{
+    background-color: var(--background);
+    background-image: linear-gradient(rgba(138, 180, 232, 0.18),rgba(191, 177, 177, 0.164));
+    height: 46rem;
+    padding-top: 1rem;
+}
+.navtitle2{
+    margin: 2rem auto;
+    font-size: 3.5rem;
+    color: var(--primary);
+    text-align: center;
+    font-family: 'Milgran', sans-serif;
+}
+.wed-con{
+    color: var(--white);
+    text-align: center;
+}
+.wed-text{
+    margin: 0 auto;
+    font-family: 'Josefin Sans', cursive;
+    max-width: 38rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.wed-details{
+    font-family: 'Celestine', cursive;
+    color: var(--secondary);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.sub-details{
+    font-family: 'Josefin Sans', cursive;
+    font-size: 1.2rem;
+}
+.sub-details2{
+    font-family: 'Josefin Sans', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.footer-con{
+    margin-top: 3.8rem;
+    background-color: var(--white);
+    padding: 0.01rem;
+}
+.footer-link{
+    text-decoration-thickness: 0.5px;
+    text-decoration-color: var(--lightblack);
+}
+.footer-text{
+    font-family: 'Emerland', serif;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-image: linear-gradient(to left, var(--primary2), var(--secondary2));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.rsvp-con{
+    margin-top: 3rem;
+}
+.rsvp{
+    background-color: var(--webcolor);
+    max-width: 38rem;
+    margin: 0 auto;
+}
+.navtitle3{
+    font-family: 'Swifted', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.labels{
+    font-family: 'Josefin Sans', cursive;
+    font-size: 1.2rem;
+}
+.sublabels{
+    color: var(--lightblack);
+    font-family: 'Josefin Sans', cursive;
+    font-size: 0.8rem;
+}
+.lname{
+    margin-left: 2rem;
+}
+.sublabel-text{
+    margin-left: 0.45rem;
+}
+.inputs{
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    border: 1.5px solid var(--gray);
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', cursive;
+    outline: none;
+}
+.inputs:focus{
+    border: 0.8px solid var(--primary);
+}
+.rucoming-con{
+    margin-top: 1rem;
+}
+.form-input, .message-form{
+    width: 100%;
+    height: 2rem;
+}
+.name-con{
+    display: grid;
+    grid-template-columns: repeat(2, 51.17%);
+    gap: 5px;
+}
+.subname-con{
+    display: grid;
+    grid-template-columns: repeat(2, 44.8%);
+    column-gap: 18px;
+    margin-top: 0.1rem;
+    margin-bottom: -1.6rem;
+}
+.resp-name-label{
+    display: none;
+}
+.name-input{
+    height: 2rem;
+    border-radius: 0.6rem;
+    border: 1.5px solid var(--gray);
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', cursive;
+    outline: none;
+}
+.name-input:focus{
+    border: 0.8px solid var(--primary);
+}
+.message-form{
+    min-height: 5rem;
+    max-height: 8rem;
+    height: 5rem;
+    resize: vertical;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.submit-button{
+    font-family: 'Josefin Sans', cursive;
+    padding: 0.45rem 0.8rem 0.3rem 0.8rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    border: 1px solid var(--black);
+    text-transform: uppercase;
+    float: right;
+}
+.submit-button:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    transition: 2ms;
+}
+/* .colorone{
+    color: var(--gray2);
+}
+.colortwo{
+    color: var(--secondary2);
+}
+.colorthree{
+    color: var(--primary);
+}
+.colorfour{
+    color: var(--tertiary);
+}
+.colorfive{
+    color: var(--green);
+}
+.colorsix{
+    color: var(--hattrick);
+} */
+.icon{
+    max-width: 22px;
+    max-height: 22px;
+}
+.icon2{
+    max-width: 22px;
+    max-height: 22px;
+    margin-left: 0.4rem;
+}
+.icon3{
+    margin-left: -1.5rem;
+}
+.song-button-con{
+    position: fixed;
+    bottom: 2.5%;
+}
+.song-button-con2{
+    position: fixed;
+    bottom: 2.5%;
+    right: 1.2%;
+}
+.song-button-text-con{
+    position: fixed;
+    bottom: 0.3rem;
+    right: 3.68rem;
+}
+.song-button-text-con2{
+    position: fixed;
+    bottom: 0.72rem;
+    right: 10.5rem;
+}
+.song-button{
+    background-color: var(--primary);
+    border: 2.5px solid var(--lightblack);
+    padding: 0.62rem 0.55rem 0.3rem 0.6rem;
+    border-radius: 50%;
+    /* margin-top: 33rem; */
+    margin-right: -0.5rem;
+    margin-left: 1rem;
+}
+.song-button2{
+    background-color: var(--primary);
+    border: 2.5px solid var(--lightblack);
+    padding: 0.62rem 0.55rem 0.3rem 0.6rem;
+    border-radius: 50%;
+    /* margin-top: 33rem; */
+    margin-right: -0.5rem;
+    margin-left: 1rem;
+}
+.song-button3{
+    background-color: var(--primary);
+    border: 2.5px solid var(--lightblack);
+    padding: 0.62rem 0.6rem 0.3rem 0.3rem;
+    border-radius: 50%;
+    /* margin-top: 33rem; */
+    /* margin-right: -0.5rem; */
+    margin-left: 1rem;
+}
+.song-button4{
+    background-color: var(--primary);
+    border: 2.5px solid var(--lightblack);
+    padding: 0.62rem 0.6rem 0.3rem 0.6rem;
+    border-radius: 50%;
+}
+.song-button-text{
+    font-family: 'Arvo', sans-serif;
+    font-size: 0.58rem;
+    color: var(--hattrick);
+    line-height: 0.3rem;
+    font-weight: 900;
+}
+.song-button:hover{
+    background-color: var(--primary2);
+    opacity: 80%;   
+    cursor: pointer;
+}
+.song-button2:hover{
+    background-color: var(--primary2);
+    opacity: 80%;
+    cursor: pointer;
+}
+.song-button3:hover{
+    background-color: var(--primary2);
+    opacity: 80%;
+    cursor: pointer;
+}
+.song-button4:hover{
+    background-color: var(--primary2);
+    opacity: 80%;
+    cursor: pointer;
+}
+@media(max-width: 845px){
+   .vertical-line{
+    display: none;
+   }
+}
+@media(max-width: 769px){
+    .song-button-text{
+        display: none;
+    }
+    .song-button4{
+        display: none;
+    }
+    .footer-con{
+        margin-top: 1.5rem;
+    }
+}
+@media(max-width: 768px){
+    .navbar-shade{
+        background-image: linear-gradient(to top, rgba(97, 90, 90, 0.1),rgba(107, 101, 101, 0.299));
+    }
+    .navtitle3, .forms{
+        margin-left: 5%;
+    }
+    .name-con{
+        grid-template-columns: repeat(2, 46.3%);
+    }
+    .lname{
+        margin-left: 0.2rem;
+    }
+    .submit-button{
+        float: none;
+        margin-left: 76%;
+    }
+    .inputs, .message-form{
+        width: 90%;
+    }
+    .footer-text{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 767px){
+    .submenu{
+        /* align-content: space-between;
+        font-size: small;
+        color: var(--white);
+        text-decoration: none;
+        float: right;
+        margin-top: 0.5rem;
+        margin-right: 2.5rem;
+        margin-left: 1rem; */
+        visibility: hidden;
+   }
+    .story-text-r{
+        margin-top: 0;
+    }
+    .song-button-con{
+        left: -2%;
+        bottom: 1.2%;
+    }
+    .header-img{
+        background-size: 100% 800px;
+        background-repeat: no-repeat;
+    }
+    .wed-date{
+        background-size: 100% 30rem;
+        background-repeat: no-repeat;
+        height: 15rem;
+    }
+    .story{
+        height: 92rem;
+    }
+}
+@media(max-width: 500px){
+    .date{
+        font-size: 3.8rem;
+    }
+    .name-con{
+        grid-template-columns: repeat(2, 47%);
+    }
+    .footer-con{
+        height: 5.8rem;
+    }
+    .submit-button{
+        margin-left: 70%;
+    }
+}
+@media(max-width: 425px){
+    .wed-text{
+        font-size: 0.88rem;
+    }
+    .sublabels{
+        font-size: 0.7rem;
+    }
+    .submit-button{
+        margin-left: 65%;
+    }
+}
+@media(max-width: 424px){
+   .story-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+   .story-con2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+   .title-button{
+        font-size: 1rem;
+   }
+   .resp-name-label{
+        display: block;
+        color: var(--lightblack);
+        font-family: 'Josefin Sans', cursive;
+        font-size: 0.7rem;
+        margin-top: -0.2rem;
+        margin-left: 0.5rem;
+    }
+    .name-label{
+        display: none;
+    }
+    .name-con{
+        grid-template-columns: repeat(1, 95%);
+    }
+}
+@media(max-width: 375px){
+   .wed-text{
+    font-size: 0.745rem;
+   }
+   .date{
+    font-size: 3rem;
+   }
+   .labels{
+    font-size: 1rem;
+   }
+   .sublabels, .resp-name-label{
+    font-size: 0.62rem;
+   }
+   .header-img{
+    background-size: 400px 800px;
+    background-repeat: no-repeat;
+   }
+}
+@media(max-width: 374px){
+    .wed-text{
+        font-size: 0.638rem;
+       }
+   .titletext-con{
+        margin-left: 2.5rem;
+   }
+   .story{
+        height: 95.5rem;
+   }
+   .wedding{
+        height: 46.75rem;
+   }
+   .name-con{
+    grid-template-columns: repeat(1, 95.5%);
+   }
+}
+@media(max-width: 281px){
+    .title, .title3{
+        font-size: 6.2rem;
+    }
+    .title2{
+        font-size: 1.8rem;
+    }
+    .title-desc, .title-desc1{
+        font-size: 1rem;
+    }
+    .title-button{
+        font-size: 0.8rem;
+    }
+   .footer-text{
+        font-size: 0.9rem;
+   }
+   .date{
+        font-size: 2.8rem;
+   }
+   .sublabels, .resp-name-label{
+    font-size: 0.56rem;
+   }
+}
