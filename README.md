@@ -1,5 +1,5 @@
-# wedding-invitation
+# Wedding Invitation Prototype
 
-wedding invitation website built with native **HTML** and **CSS**
+A website prototype of wedding invitation built with native **HTML** and **CSS**
 
-see the preview here: [website](https://wedding-invitation-prototype-maxwell.netlify.app/)
+see the preview here: [website link](https://wedding-invitation-prototype-maxwell.netlify.app/)
